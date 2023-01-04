@@ -102,14 +102,16 @@ plugins:
   - search
   - mike
   - pdf-export
-  - git-authors
+  - git-authors:
+      show_contribution: true
+      show_line_count: true
+      count_empty_lines: true
   - git-committers:
       repository: Nanangprasetya/rekat-docs
       branch: master
   - git-revision-date-localized:
       type: datetime
       enable_creation_date: true
-      fallback_to_build_date: true
   - minify:
       minify_html: true
       minify_js: true
@@ -125,3 +127,10 @@ extra_css:
 extra:
   version:
     provider: mike
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/Nanangprasetya/rekat-docs
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/nanang-prasetya-bekti-000612142/
+    - icon: fontawesome/brands/medium
+      link: https://medium.com/@biscuit_uiux
