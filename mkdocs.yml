@@ -1,14 +1,13 @@
 #! Project information
 site_name: Menoreh
-# site_url: https://squidfunk.github.io/mkdocs-material/
 site_author: Nanang Prasetya
 site_description: >-
   Write your documentation in Markdown and create a professional static site in
   minutes – searchable, customizable, for all devices
 
 #! Repository
-repo_name: solid_principle_flutter
-repo_url: https://github.com/Nanangprasetya/solid_principle_flutter
+repo_name: rekat-docs
+repo_url: https://github.com/Nanangprasetya/rekat-docs
 
 #! Copyright
 copyright: Copyright &copy; 2023 Nanang Prasetya
@@ -104,9 +103,9 @@ plugins:
   - mike
   - pdf-export
   - git-authors
-  # - git-committers:
-  #     repository: panemu/menoreh
-  #     branch: main
+  - git-committers:
+      repository: Nanangprasetya/rekat-docs
+      branch: master
   - git-revision-date-localized:
       type: datetime
       enable_creation_date: true
