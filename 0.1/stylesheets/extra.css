@@ -2,3 +2,68 @@
   --md-primary-fg-color: black;
   --md-accent-fg-color: #007AFF;
 }
+
+/* Page 404 */
+
+#notfound .notfound {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.notfound {
+  max-width: 767px;
+  width: 100%;
+  line-height: 1.4;
+  text-align: center;
+  padding: 15px;
+}
+
+.pnl-body {
+  position: relative;
+  height: 220px;
+}
+
+.notfound .pnl-body h2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 186px;
+  font-weight: bold;
+  margin: 0;
+  background: linear-gradient(180deg, #55F5FF, #4A9DFF);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-transform: uppercase;
+}
+
+.notfound p {
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 30px;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+.notfound p a {
+  color: #007AFF;
+  font-weight: 200;
+  text-decoration: none;
+}
+
+.notfound .social-links a {
+  background: rgba(191, 15, 18, 0.09);
+  color: #007AFF;
+}
+
+.notfound .social-link a:hover {
+  background: #007AFF;
+  color: white;
+}
