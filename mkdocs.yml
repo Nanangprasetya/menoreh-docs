@@ -1,9 +1,6 @@
 #! Project information
-site_name: Menoreh
+site_name: Menoreh Library
 site_author: Nanang Prasetya
-site_description: >-
-  Write your documentation in Markdown and create a professional static site in
-  minutes – searchable, customizable, for all devices
 
 #! Repository
 repo_name: rekat-docs
@@ -15,23 +12,91 @@ copyright: Copyright &copy; 2023 Nanang Prasetya
 #! Navigation menu
 nav:
   - Home:
-    - index.md
-  - Getting started:
-    - Installing: documentation/started.md
-    - Extension: documentation/extention.md
-  - Repo: documentation/started.md
+      - index.md
+  - Documentation:
+      - Getting Started: documentation/getting_started.md
+      - Foundation:
+          - Design Architecture:
+              - documentation/fundation/solid.md
+              - Features Layer: documentation/fundation/feature.md
+              - Domain Layer: documentation/fundation/domain.md
+              - Data Layer: documentation/fundation/data.md
+              - Form Inputs Layer: documentation/fundation/form-inputs.md
+          - Environment: documentation/fundation/env.md
+          - Routers: documentation/fundation/router.md
+      - Theming:
+          - documentation/theming/index.md
+          - Color: documentation/theme/color.md
+          - Typography: documentation/theme/typography.md
+          - Dimention: documentation/theme/dimention.md
+      - Components:
+          - Action:
+              - Common Button: documentation/component/action/common_button.md
+              - Icon Button: documentation/component/action/icon_button.md
+              # - Floating Action Button: documentation/component/action/button.md
+              # - Segmented Button: documentation/component/action/button.md
+              - Radio Button: documentation/component/action/radio_button.md
+              - Checkboxes: documentation/component/action/checkboxes.md
+              - Switches: documentation/component/action/switches.md
+              # - Sliders: documentation/component/action/button.md
+          - Comunication:
+              - Dialog: documentation/component/comunication/dialog.md
+              - Snackbar: documentation/component/comunication/snackbar.md
+              # - Sheets: documentation/component/comunication/toolt.md
+              # - Tooltip: documentation/component/comunication/tooltip.md
+              # - Progress Indicator: documentation/component/action/progress_indicator.md
+          - Images:
+              - Icons: documentation/component/action/button.md
+              - Images: documentation/component/action/button.md
+          - Containment:
+              - Spaces: documentation/component/action/button.md
+              - Divider: documentation/component/action/button.md
+              - Card: documentation/component/action/button.md
+          - Navigation:
+              - Navigation Bar: documentation/component/action/button.md
+              - Tabs: documentation/component/action/button.md
+              - Badges: documentation/component/action/button.md
+          - Table:
+              - Main table: documentation/component/action/button.md
+              - Paging table: documentation/component/action/button.md
+              - Columns table: documentation/component/action/button.md
+              - Rows table: documentation/component/action/button.md
+          - Text inputs:
+              - Basic: documentation/component/action/button.md
+              - Currency: documentation/component/action/button.md
+              - Date Picker: documentation/component/action/button.md
+              - Dropdown: documentation/component/action/button.md
+              - Dropdown Search: documentation/component/action/button.md
+              - Image Picker: documentation/component/action/button.md
+              - Switch Button: documentation/component/action/button.md
+              - Search: documentation/component/action/button.md
+              - Auth: documentation/component/action/button.md
+              - Tags: documentation/component/action/button.md
+      - Utils:
+          - Responsive: documentation/solid/feature.md
+          - Currency: documentation/solid/domain.md
+          - Date Time: documentation/solid/data.md
+          - Character: documentation/solid/data.md
+
+  - Repository: https://github.com/Nanangprasetya/rekat-docs
+  - Contact: documentation/started.md
+  - Demo: documentation/started.md
 
 #! Theme
 theme:
   name: material
   custom_dir: overrides
+  language: id
   logo: assets/images/menoreh_logo.png
   features:
     - tabs
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.top
+    - navigation.sections
     - navigation.footer
+    - navigation.tracking
+    - navigation.indexes
     - content.code.copy
     - content.action.edit
     - content.action.view
@@ -96,12 +161,16 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
 
 #! Plugin
 plugins:
   - search
   - mike
   - pdf-export
+  - glightbox
   - git-authors:
       show_contribution: true
       show_line_count: true
@@ -123,7 +192,7 @@ plugins:
 extra_css:
   - stylesheets/extra.css
 
-#! Customization 
+#! Customization
 extra:
   version:
     provider: mike
